@@ -73,7 +73,7 @@ asthma = st.checkbox("Asthma")
 
 if st.button("Predict.Department"):
   patient = pd.DataFrame([{
-      'age': age,
+    'age': age,
     'gender': gender_map.get(gender, 0),
     'fever': int(fever),
     'cough': int(cough),
