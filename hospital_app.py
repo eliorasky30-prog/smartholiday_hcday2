@@ -100,7 +100,7 @@ patient_scaled[cols_to_scale] = scaler.transform(
 
 prediction = model.predict(
 patient_scaled[features]  
-)
+)[0]
 
 department = dept_map_inv[prediction]
 
