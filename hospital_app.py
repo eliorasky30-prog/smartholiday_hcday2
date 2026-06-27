@@ -11,7 +11,7 @@ def load_model():
   with open("hospital_model.pkl", "rb") as f:
     return pickle.load(f)
 
-bundle = load_mode()
+bundle = load_model()
 
 model = bundle['model']
 scaler = bundle['scaler']
